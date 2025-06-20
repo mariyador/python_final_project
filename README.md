@@ -23,3 +23,6 @@ It includes web scraping, data cleaning, database import, SQL queries, and a Str
 - eurovision_winners.csv – cleaned dataset
 - eurovision.db – SQLite database
 - requirements.txt – dependencies
+
+#Link:
+https://mariyadoronkina-py.streamlit.app/
