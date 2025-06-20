@@ -19,7 +19,7 @@ decade = st.sidebar.selectbox("Select a decade:", sorted(df['Decade'].unique()))
 filtered_df = df[df['Decade'] == decade]
 
 # Country filter
-country = st.sidebar.selectbox("Select a country (optional):", ["All"] + sorted(df['Country'].unique()))
+country = st.sidebar.selectbox("Select a country:", ["All"] + sorted(df['Country'].unique()))
 if country != "All":
     filtered_df = filtered_df[filtered_df['Country'] == country]
 
@@ -50,7 +50,7 @@ if repeats:
 else:
     st.write("There are no artists with more than one win.")
 
-# Countries with the Fewest Wins (show all with the minimum number of wins)
+# Countries with the Fewest Wins
 st.subheader("Countries with the Fewest Wins")
 
 country_win_counts = df['Country'].value_counts()
@@ -64,7 +64,7 @@ countries_line = ', '.join([f"{country} ({wins})" for country, wins in fewest_wi
 st.write(countries_line)
 
 
-# Assume you have a full list of participating countries:
+# Full list of participating countries:
 all_countries = [
     "Switzerland", "Netherlands", "France", "Luxembourg", "Italy", "Austria", "United Kingdom", "Spain",
     "Monaco", "Ireland", "Sweden", "Germany", "Belgium", "Israel", "Norway", "Turkey", "Greece", "Ukraine",
