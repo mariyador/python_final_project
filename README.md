@@ -24,5 +24,5 @@ It includes web scraping, data cleaning, database import, SQL queries, and a Str
 - eurovision.db – SQLite database
 - requirements.txt – dependencies
 
-#Link:
+# Link:
 https://mariyadoronkina-py.streamlit.app/
